@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap')
+layer(base);
+
+@import 'tailwindcss';
+
+@theme {
+  --font-montserrat: Montserrat, sans-serif;
+
+  --shadow-custom: 0 0 15px rgba(0, 0, 0, 0.3);
+  --shadow-right: 10px 0px 10px -5px rgba(0, 0, 0, 0.3);
+
+  --color-custom-blue: #A6192E;
+
+  --color-banner-color1: #EE3124;
+  --color-banner-color2: #A6192E;
+  --color-banner-color3: #6B7280;
+  --color-banner-color4: #4B5563;
+
+  --background-image-custom-gradient: linear-gradient(
+    to right,
+    #A6192E,
+    #EE3124
+  );
+  --background-image-button-gradient: linear-gradient(
+    to right,
+    #A6192E,
+    #EE3124
+  );
+  --background-image-custom-gradient2: linear-gradient(
+    135deg,
+    #F3F4F6,
+    #D1D5DB
+  );
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}

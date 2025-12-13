@@ -1,0 +1,10 @@
+# IDEs
+.idea/
+.vscode/
+
+# Local images folder (will use Cloudinary in production)
+images/
+
+# OS files
+.DS_Store
+Thumbs.db
