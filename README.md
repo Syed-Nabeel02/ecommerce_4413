@@ -1,13 +1,18 @@
 # York Store  E-Commerce Platform
 
-## Table of Contents
+-  Github Repository(with sql Script): https://github.com/Syed-Nabeel02/ecommerce_4413
+- Deployed link: https://mellow-unicorn-811456.netlify.app/
+- Admin credentials
+  - Username: admin
+  - Password: adminPass
+
+## Setup Guide
 - [Prerequisites](#prerequisites)
 - [Setup Instructions](#setup-instructions)
   - [1. Database Setup](#1-database-setup)
   - [2. Backend Setup](#2-backend-setup)
   - [3. Populate Database](#3-populate-database)
   - [4. Frontend Setup](#4-frontend-setup)
-- [Admin User Credentials](#admin-user-credentials)
 ---
 
 ## Prerequisites
@@ -148,12 +153,5 @@ npm run dev
 Frontend runs on `http://localhost:5173`
 ---
 
-## Admin User Credentials
-- **Admin User Credentials:**
-  - Username: `admin`
-  - Password: `adminPass`
-- **Cloudinary Configuration:**
-  - Ensure Cloudinary credentials are set in `application.properties` for image uploads with the given api key.
 
----
 
