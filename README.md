@@ -13,6 +13,7 @@
   - [2. Backend Setup](#2-backend-setup)
   - [3. Populate Database](#3-populate-database)
   - [4. Frontend Setup](#4-frontend-setup)
+  - [Resources](#resources-used-as-references-for-this-project)
 ---
 
 ## Prerequisites
@@ -153,5 +154,19 @@ npm run dev
 Frontend runs on `http://localhost:5173`
 ---
 
+##Resources used as references for this project:
+- [Spring Boot Documentation](https://spring.io/projects/spring-boot)
+- [PostgreSQL Documentation](https://www.postgresql.org/docs/)
+- medium.com/@tericcabrel/implement-jwt-authentication-in-a-spring-boot-3-application
+- EmbarkX Spring boot Tutorial
+- GreatStack react Tutorial
+- freecodecamp.org for React and Redux tutorials
+- React icon library documentation and components
+- Headless UI Documentation and components
+- Material-UI Documentation and components
+- TanStack Table Documentation and components
+- Redux Toolkit Documentation
+- icons8.com for icons
+- Cloudinary for image storage
 
 
