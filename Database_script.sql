@@ -2,6 +2,11 @@
 -- York University Merchandise Database Seed
 -- ==========================================
 
+-- ==========================================
+-- this script will insert initial data into the categories and products tables
+-- First create an "ecommerce" database  on your local Postgres server
+-- then run the spring boot backend to create all the tables using JPA
+-- finally run this script to populate the tables with initial data
 
 -- ==========================================
 -- INSERT CATEGORIES
