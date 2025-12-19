@@ -154,7 +154,7 @@ npm run dev
 Frontend runs on `http://localhost:5173`
 ---
 
-##Resources used as references for this project:
+## Resources used as references for this project:
 - [Spring Boot Documentation](https://spring.io/projects/spring-boot)
 - [PostgreSQL Documentation](https://www.postgresql.org/docs/)
 - medium.com/@tericcabrel/implement-jwt-authentication-in-a-spring-boot-3-application
