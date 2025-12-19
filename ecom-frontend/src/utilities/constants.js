@@ -83,7 +83,7 @@ export const LS_CHECKOUT_PAYMENT_CARD_KEY = 'CHECKOUT_PAYMENT_CARD';
 // ============================================
 // API ENDPOINTS (if needed)
 // ============================================
-export const API_BASE_URL = import.meta.env.VITE_BACK_END_URL || 'http://localhost:8080';
+export const API_BASE_URL = 'http://localhost:8080';
 
 
 // ============================================

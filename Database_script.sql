@@ -1,20 +1,7 @@
 -- ==========================================
 -- York University Merchandise Database Seed
 -- ==========================================
--- This script populates the database with York University college merchandise
---
--- Categories: Glendon, Lassonde, Osgoode, Schulich
--- Products: T-Shirts, Hoodies, Joggers/Pants
--- Images: Cloudinary URLs (already uploaded)
---
--- IMPORTANT:
--- 1. Make sure your database tables exist (run the ecommerce-backend Spring Boot once before running this script)
--- ==========================================
 
--- Optional: Clear existing data (uncomment if needed)
--- DELETE FROM cart_item;
--- DELETE FROM products;
--- DELETE FROM categories;
 
 -- ==========================================
 -- INSERT CATEGORIES
@@ -30,8 +17,7 @@ ON CONFLICT (category_id) DO NOTHING;
 -- ==========================================
 -- INSERT PRODUCTS
 -- ==========================================
--- Note: user_id is set to 2 - adjust to match your admin user
--- All images are from your Cloudinary account
+
 
 -- GLENDON PRODUCTS (Category 1)
 INSERT INTO products (product_id, product_name, model, description, price, quantity, image, category_id, user_id) VALUES
@@ -109,12 +95,4 @@ ON CONFLICT (product_id) DO NOTHING;
 -- Use pg_get_serial_sequence to find the correct sequence name automatically
 SELECT setval(pg_get_serial_sequence('categories', 'category_id'), (SELECT MAX(category_id) FROM categories));
 SELECT setval(pg_get_serial_sequence('products', 'product_id'), (SELECT MAX(product_id) FROM products));
-
--- Reset other sequences that might be affected
-SELECT setval(pg_get_serial_sequence('users', 'user_id'), (SELECT COALESCE(MAX(user_id), 1) FROM users));
-SELECT setval(pg_get_serial_sequence('addresses', 'address_id'), (SELECT COALESCE(MAX(address_id), 1) FROM addresses));
-SELECT setval(pg_get_serial_sequence('payment_cards', 'card_id'), (SELECT COALESCE(MAX(card_id), 1) FROM payment_cards));
-SELECT setval(pg_get_serial_sequence('orders', 'order_id'), (SELECT COALESCE(MAX(order_id), 1) FROM orders));
-SELECT setval(pg_get_serial_sequence('cart_item', 'cart_item_id'), (SELECT COALESCE(MAX(cart_item_id), 1) FROM cart_item));
-SELECT setval(pg_get_serial_sequence('carts', 'cart_id'), (SELECT COALESCE(MAX(cart_id), 1) FROM carts));
 

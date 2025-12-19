@@ -42,7 +42,7 @@ const OrderDetailsModal = ({ open, setOpen, order }) => {
                         {order.orderItems?.map((item) => (
                             <div key={item.orderItemId} className="flex gap-4 p-3 bg-gray-50 rounded-md">
                                 <img
-                                    src={`${import.meta.env.VITE_BACK_END_URL}/images/${item.product?.image}`}
+                                    src={`http://localhost:8080/images/${item.product?.image}`}
                                     alt={item.product?.productName}
                                     className="w-20 h-20 object-cover rounded"
                                 />
