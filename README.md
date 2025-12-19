@@ -11,7 +11,7 @@
 - [Setup Instructions](#setup-instructions)
   - [1. Database Setup](#1-database-setup)
   - [2. Backend Setup](#2-backend-setup)
-  - [3. Populate Database](#3-populate-database)
+  - [3. Populate Database - Running Script](#3-populate-database)
   - [4. Frontend Setup](#4-frontend-setup)
 ---
 
@@ -116,7 +116,7 @@ Backend runs on `http://localhost:8080`
 
 ---
 
-### 3. Populate Database
+### 3. Populate Database - Run DB Script
 
 Now that the tables are created, we need to add initial data (categories and products).
 
